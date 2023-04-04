@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>configuracion</title>
+    <link rel="icon" href="../Animaciones/Screenshot_3.png">
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/configuracion.css">
+</head>
+<body>
+  <div class="contenedor">
+    <div class="informacion" id="informacion">
+        <h2 class="titulo1">Tus datos personales</h2>
+        <button class="edit1" id="edit1" type="submit"><img src="../iconos/pen-fill (1).svg" ></button>
+        <button class="edit2" id="edit2" type="submit"><img src="../iconos/pen-fill (1).svg" ></button>
+        <!-- <button class="edit3" id="edit3" type="submit"><img src="../iconos/pen-fill (1).svg" ></button> -->
+        <button class="edit4" id="edit4" type="submit"><img src="../iconos/pen-fill (1).svg" ></button>
+        <button class="edit5" id="edit5" type="submit"><img src="../iconos/pen-fill (1).svg" ></button>
+        <table class="table text-danger" id="table">
+           <thead>
+             <tr>
+               <th scope="col">#</th>
+               <th scope="col" colspan="2">datos</th>
+               <th scope="col" colspan="2">contenido</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">1</th>
+               <td colspan="2">Nombre</td>
+               <td colspan="2" id="nombre"></td>
+             </tr>
+             <tr>
+               <th scope="row">2</th>
+               <td colspan="2">Apellido</td>
+               <td colspan="2" id="apellido"></td>
+             </tr>
+             <tr>
+               <th scope="row">3</th>
+               <td colspan="2">Correo</td>
+               <td colspan="2" id="correo"></td>
+             </tr>
+             <tr>
+               <th scope="row">4</th>
+               <td colspan="2">Clave</td>
+               <td colspan="2" id="clave"></td>
+             </tr>
+             <tr>
+               <th scope="row">5</th>
+               <td colspan="2">Estatus</td>
+               <td colspan="2" id="Estatus"></td>
+             </tr>
+           </tbody>
+         </table>   
+   </div>
+   <div class="cambio-datos" id="cambio-datos">
+    <form >
+     <input type="text" id="c_1" class="c-1-v">
+     <input type="text" id="c_2" class="c-2-v">
+     <input type="text" id="c_3" class="c-3-v">
+     <input type="text" id="c_4" class="c-4-v">
+     <input type="text" id="c_5" class="c-5-v">
+    </form>
+   </div>
+   <div class="panel">
+    <button class="switch" id="switch">
+        <span><img src="../iconos/brightness-high-fill.svg" alt=""></span>
+        <span><img src="../iconos/moon-fill.svg" alt=""></span>
+    </button>
+    <button class="boton" id="volver">Volver</button>
+  </div>
+</div>
+</body>
+<script src="../js/configuracion.js"></script>
+<script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+</html>

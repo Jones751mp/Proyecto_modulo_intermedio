@@ -1,0 +1,238 @@
+body {
+	background: #F1F1F1;
+	font-family: 'Roboto', sans-serif;
+	transition: .3s ease all;
+    color: white;
+}
+body.dark {
+	background: #111111;
+   color: white;
+}
+.contenedor{
+    width: 100%;
+}
+.titulo1{
+    height: 50px;
+    background-color: #000;
+}
+.c-1{
+    width: 100%;
+    position: relative;
+}
+.c-1-v{
+    display: none;
+}
+.c-2-v{
+    display: none;
+}
+.c-3-v{
+    display: none;
+}
+.c-4-v{
+    display: none;
+}
+.c-5-v{
+    display: none;
+}
+.c-2{
+    width:100%;
+    position: absolute;
+    top: 45px;
+}
+.c-3{
+    width: 100%;
+    position: absolute;
+    bottom: 85px;
+}
+.c-4{
+    position: absolute;
+    bottom: 45px;
+    width:100%;
+}
+.c-5{
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+}
+.cambio-datos{
+    width: 400px;
+    height: 200px;
+    background-color:  transparent;
+    position: relative;
+    bottom: 220px;
+    left: 300px;
+}
+.edit1{
+    position: absolute;
+    top: 17%;
+    left: 62.5%;
+    border: none;
+    background-color: transparent;
+    }
+.edit2{
+    position: absolute;
+    top: 145px;
+    left: 62.5%;
+    border: none;
+    background-color: transparent;
+}
+.edit4{
+    position: absolute;
+    top: 235px;
+    left: 62.5%;
+    border: none;
+    background-color: transparent;
+}
+.edit5{
+    position: absolute;
+    top: 275px;
+    left: 62.5%;
+    border: none;
+    background-color: transparent;
+}
+.panel{
+    width: 30%;
+    height: 45px;
+    position: relative;
+    bottom: 520px;
+    left: 69%;
+}
+.boton{
+    height: 32px;
+    background-color: white;
+    border: none;
+    position: relative;
+    bottom: 75%;
+    left: 60%;
+    margin: 10px;
+    display: inline;
+    border-radius: 3px;
+}
+    .boton:hover{
+    background-color: blue;
+    color: white;    
+}
+.switch {
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    top: 20%;
+    left: 40%;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+.switch::after {
+  content: "";
+display: block;
+ width: 30px;
+  height: 30px;
+position: absolute;
+ background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+     border-radius: 100px;
+     transition: .3s ease all;
+     box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+}
+.switch.active {
+    background: orange;
+    color: #000;
+}
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(132deg) brightness(105%) contrast(104%);
+}
+    /* Smartphones (horizontal y vertical) */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  body{
+    height: 100% ;
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+  .switch{
+    right: 100px;
+  }
+  .panel{
+   
+    left: 62%;
+  }
+ .edit1, .edit2, .edit4, .edit5{
+    right: 9%;
+ }
+ .edit1{
+    top: 20%;
+ }
+ .boton{
+    position: relative;
+   top: 600%;
+    background-color: blue;
+ }
+ .table{
+    position: relative;
+    left: 4%;
+ }
+}
+
+/* Smartphones (horizontal) */
+@media only screen 
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (vertical)  */
+@media only screen 
+and (max-width : 320px) {
+body{
+    width: 100%;
+}
+}
+
+/* iPads (vertical y horizontal) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* estilos */
+}
+
+/* iPads (horizontal) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* estilos */
+}
+
+/* iPads (vertical)  */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* estilos */
+}
+
+/* pc de escritorio y portátiles */
+@media only screen 
+and (min-width : 1224px) {
+/* estilos */
+}
+
+/* Pantallas grandes  */
+@media only screen 
+and (min-width : 1824px) {
+/* estilos */
+}
+/* fin responsive */
